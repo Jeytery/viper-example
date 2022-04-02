@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  VIPER-CompleteGuide
+//  JokeApp
 //
 //  Created by Jeytery on 02.04.2022.
 //

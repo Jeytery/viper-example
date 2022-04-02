@@ -7,27 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3EBEEEE527F887A50012A461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEEE427F887A50012A461 /* AppDelegate.swift */; };
-		3EBEEEE727F887A50012A461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEEE627F887A50012A461 /* SceneDelegate.swift */; };
-		3EBEEEE927F887A50012A461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEEE827F887A50012A461 /* ViewController.swift */; };
-		3EBEEEEC27F887A50012A461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEEEA27F887A50012A461 /* Main.storyboard */; };
-		3EBEEEEE27F887A70012A461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEEED27F887A70012A461 /* Assets.xcassets */; };
-		3EBEEEF127F887A70012A461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEEEF27F887A70012A461 /* LaunchScreen.storyboard */; };
+		3EBEEEFF27F887E80012A461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEEFE27F887E80012A461 /* AppDelegate.swift */; };
+		3EBEEF0127F887E80012A461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0027F887E80012A461 /* SceneDelegate.swift */; };
+		3EBEEF0327F887E80012A461 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0227F887E80012A461 /* ViewController.swift */; };
+		3EBEEF0627F887E80012A461 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0427F887E80012A461 /* Main.storyboard */; };
+		3EBEEF0827F887EA0012A461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0727F887EA0012A461 /* Assets.xcassets */; };
+		3EBEEF0B27F887EA0012A461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0927F887EA0012A461 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EBEEEE127F887A50012A461 /* VIPER-CompleteGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-CompleteGuide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EBEEEE427F887A50012A461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3EBEEEE627F887A50012A461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3EBEEEE827F887A50012A461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3EBEEEEB27F887A50012A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3EBEEEED27F887A70012A461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3EBEEEF027F887A70012A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		3EBEEEF227F887A70012A461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBEEEFC27F887E80012A461 /* JokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBEEEFE27F887E80012A461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3EBEEF0027F887E80012A461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3EBEEF0227F887E80012A461 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3EBEEF0527F887E80012A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EBEEF0727F887EA0012A461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EBEEF0A27F887EA0012A461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EBEEF0C27F887EA0012A461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3EBEEEDE27F887A50012A461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBEEEF927F887E80012A461 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBEEEE327F887A50012A461 /* VIPER-CompleteGuide */,
+				3EBEEEFD27F887E80012A461 /* JokeApp */,
 				3EBEEEE227F887A50012A461 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBEEEE127F887A50012A461 /* VIPER-CompleteGuide.app */,
+				3EBEEEFC27F887E80012A461 /* JokeApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +66,22 @@
 		3EBEEEE327F887A50012A461 /* VIPER-CompleteGuide */ = {
 			isa = PBXGroup;
 			children = (
-				3EBEEEE427F887A50012A461 /* AppDelegate.swift */,
-				3EBEEEE627F887A50012A461 /* SceneDelegate.swift */,
-				3EBEEEE827F887A50012A461 /* ViewController.swift */,
-				3EBEEEEA27F887A50012A461 /* Main.storyboard */,
-				3EBEEEED27F887A70012A461 /* Assets.xcassets */,
-				3EBEEEEF27F887A70012A461 /* LaunchScreen.storyboard */,
-				3EBEEEF227F887A70012A461 /* Info.plist */,
 			);
 			path = "VIPER-CompleteGuide";
+			sourceTree = "<group>";
+		};
+		3EBEEEFD27F887E80012A461 /* JokeApp */ = {
+			isa = PBXGroup;
+			children = (
+				3EBEEEFE27F887E80012A461 /* AppDelegate.swift */,
+				3EBEEF0027F887E80012A461 /* SceneDelegate.swift */,
+				3EBEEF0227F887E80012A461 /* ViewController.swift */,
+				3EBEEF0427F887E80012A461 /* Main.storyboard */,
+				3EBEEF0727F887EA0012A461 /* Assets.xcassets */,
+				3EBEEF0927F887EA0012A461 /* LaunchScreen.storyboard */,
+				3EBEEF0C27F887EA0012A461 /* Info.plist */,
+			);
+			path = JokeApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +104,23 @@
 			productReference = 3EBEEEE127F887A50012A461 /* VIPER-CompleteGuide.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3EBEEEFB27F887E80012A461 /* JokeApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EBEEF0D27F887EA0012A461 /* Build configuration list for PBXNativeTarget "JokeApp" */;
+			buildPhases = (
+				3EBEEEF827F887E80012A461 /* Sources */,
+				3EBEEEF927F887E80012A461 /* Frameworks */,
+				3EBEEEFA27F887E80012A461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JokeApp;
+			productName = JokeApp;
+			productReference = 3EBEEEFC27F887E80012A461 /* JokeApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +132,9 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3EBEEEE027F887A50012A461 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3EBEEEFB27F887E80012A461 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -116,6 +153,7 @@
 			projectRoot = "";
 			targets = (
 				3EBEEEE027F887A50012A461 /* VIPER-CompleteGuide */,
+				3EBEEEFB27F887E80012A461 /* JokeApp */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +163,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBEEEF127F887A70012A461 /* LaunchScreen.storyboard in Resources */,
-				3EBEEEEE27F887A70012A461 /* Assets.xcassets in Resources */,
-				3EBEEEEC27F887A50012A461 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBEEEFA27F887E80012A461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBEEF0B27F887EA0012A461 /* LaunchScreen.storyboard in Resources */,
+				3EBEEF0827F887EA0012A461 /* Assets.xcassets in Resources */,
+				3EBEEF0627F887E80012A461 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,27 +183,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EBEEEE927F887A50012A461 /* ViewController.swift in Sources */,
-				3EBEEEE527F887A50012A461 /* AppDelegate.swift in Sources */,
-				3EBEEEE727F887A50012A461 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EBEEEF827F887E80012A461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBEEF0327F887E80012A461 /* ViewController.swift in Sources */,
+				3EBEEEFF27F887E80012A461 /* AppDelegate.swift in Sources */,
+				3EBEEF0127F887E80012A461 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3EBEEEEA27F887A50012A461 /* Main.storyboard */ = {
+		3EBEEF0427F887E80012A461 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EBEEEEB27F887A50012A461 /* Base */,
+				3EBEEF0527F887E80012A461 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		3EBEEEEF27F887A70012A461 /* LaunchScreen.storyboard */ = {
+		3EBEEF0927F887EA0012A461 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3EBEEEF027F887A70012A461 /* Base */,
+				3EBEEF0A27F887EA0012A461 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -338,6 +390,62 @@
 			};
 			name = Release;
 		};
+		3EBEEF0E27F887EA0012A461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R24W57U338;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jeytery.JokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3EBEEF0F27F887EA0012A461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R24W57U338;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JokeApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Jeytery.JokeApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +463,15 @@
 			buildConfigurations = (
 				3EBEEEF627F887A70012A461 /* Debug */,
 				3EBEEEF727F887A70012A461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EBEEF0D27F887EA0012A461 /* Build configuration list for PBXNativeTarget "JokeApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EBEEF0E27F887EA0012A461 /* Debug */,
+				3EBEEF0F27F887EA0012A461 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
