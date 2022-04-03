@@ -7,47 +7,42 @@
 
 import UIKit
 
-protocol JokeDeatilPresenterInput: AnyObject {}
-protocol JokeDeatilPresenterOutput: AnyObject {}
-
-class JokeDeatilPresenter: ViperPresenter, JokeDeatilPresenterInput {
-    var viewInput: JokeDeatilViewInput!
-    var interactorInput: JokeDeatilInteractorInput!
-    var routerInput: JokeDeatilRouterInput!
-
-    required init() {}
+protocol JokeDetailModuleOutput: AnyObject {
+    func module(_ view: UIViewController, didTapSaveButtonWith joke: Joke)
 }
 
-extension JokeDeatilPresenter: JokeDeatilViewOuput {
-    func viewDidLoad() {
-        print("did load!!")
-    }
-}
-
-extension JokeDeatilPresenter: JokeDeatilInteractorOutput {}
-
-protocol JokeDeatilInteractorInput: AnyObject {}
-protocol JokeDeatilInteractorOutput: AnyObject {}
-
-class JokeDeatilInteractor: ViperInteractor, JokeDeatilInteractorInput {
-    var output: JokeDeatilInteractorOutput!
-    
-    required init() {}
-}
-
-protocol JokeDeatilRouterInput: AnyObject {}
-
-class JokeDeatilRouter: ViperRouter, JokeDeatilRouterInput {
-    var viewController: UIViewController!
-    
-    required init() {
+class JokeDetailBuilder: ViperBuilder<
+    JokeDetailView,
+    JokeDetailPresenter,
+    JokeDetailInteractor,
+    JokeDetailRouter
+> {
+    static func build(
+        with joke: Joke,
+        delegate: JokeDetailModuleOutput
+    ) -> ViperModule<
+        JokeDetailView,
+        JokeDetailPresenter,
+        JokeDetailInteractor,
+        JokeDetailRouter
+    > {
+        let view = JokeDetailView()
+        let presenter = JokeDetailPresenter()
+        let interactor = JokeDetailInteractor()
+        let router = JokeDetailRouter()
         
+        view.output = presenter as JokeDetailView.ViewOutput
+        presenter.viewInput = view as? JokeDetailPresenter.ViewInput
+        presenter.routerInput = router as JokeDetailPresenter.RouterInput
+        presenter.interactorInput = interactor as JokeDetailPresenter.InteractorInput
+        interactor.output = presenter as JokeDetailInteractor.InteractorOutput
+        router.viewController = view
+        
+        return ViperModule(
+            view: view,
+            presenter: presenter,
+            interactor: interactor,
+            router: router
+        )
     }
 }
-
-typealias JokeDeatilBuilder = ViperBuilder<
-    JokeDeatilView,
-    JokeDeatilPresenter,
-    JokeDeatilInteractor,
-    JokeDeatilRouter
->

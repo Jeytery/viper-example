@@ -7,15 +7,15 @@
 
 import UIKit
 
-protocol JokeDeatilViewInput: AnyObject {}
+protocol JokeDetailViewInput: AnyObject {}
 
-protocol JokeDeatilViewOuput: AnyObject {
+protocol JokeDetailViewOuput: AnyObject {
     func viewDidLoad()
 }
 
-class JokeDeatilView: UIViewController, ViperView, JokeViewInput {
+class JokeDetailView: UIViewController, ViperView, JokeViewInput {
     
-    var output: JokeDeatilViewOuput!
+    var output: JokeDetailViewOuput!
     
     required init() {
         super.init(nibName: nil, bundle: nil)
