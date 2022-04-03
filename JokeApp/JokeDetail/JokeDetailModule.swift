@@ -32,9 +32,13 @@ class JokeDetailBuilder: ViperBuilder<
         let router = JokeDetailRouter()
         
         view.output = presenter as JokeDetailView.ViewOutput
-        presenter.viewInput = view as? JokeDetailPresenter.ViewInput
+        
+        presenter.viewInput = view as JokeDetailPresenter.ViewInput
         presenter.routerInput = router as JokeDetailPresenter.RouterInput
         presenter.interactorInput = interactor as JokeDetailPresenter.InteractorInput
+        presenter.moduleOuput = delegate
+        presenter.setJoke(joke)
+        
         interactor.output = presenter as JokeDetailInteractor.InteractorOutput
         router.viewController = view
         

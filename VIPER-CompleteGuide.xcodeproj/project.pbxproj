@@ -14,6 +14,8 @@
 		3E46853D27F9AC6A00670235 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46853C27F9AC6A00670235 /* JokeView.swift */; };
 		3E46853F27F9AC7100670235 /* JokeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46853E27F9AC7100670235 /* JokeInteractor.swift */; };
 		3E46854127F9AC7500670235 /* JokeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46854027F9AC7500670235 /* JokeRouter.swift */; };
+		3E46854727F9BA2400670235 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3E46854627F9BA2400670235 /* SnapKit */; };
+		3E46854C27F9BF4E00670235 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E46854B27F9BF4E00670235 /* API.swift */; };
 		3EBEEEFF27F887E80012A461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEEFE27F887E80012A461 /* AppDelegate.swift */; };
 		3EBEEF0827F887EA0012A461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0727F887EA0012A461 /* Assets.xcassets */; };
 		3EBEEF0B27F887EA0012A461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EBEEF0927F887EA0012A461 /* LaunchScreen.storyboard */; };
@@ -23,7 +25,7 @@
 		3EBEEF2127F8ADA40012A461 /* JokeModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF2027F8ADA40012A461 /* JokeModule.swift */; };
 		3EBEEF2327F8B5DD0012A461 /* JokeDetailModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF2227F8B5DD0012A461 /* JokeDetailModule.swift */; };
 		3EBEEF2527F8B6B00012A461 /* JokeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF2427F8B6B00012A461 /* JokeDetailView.swift */; };
-		3EBEEF2827F8B72C0012A461 /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF2727F8B72C0012A461 /* Joke.swift */; };
+		3EBEEF2827F8B72C0012A461 /* JokeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBEEF2727F8B72C0012A461 /* JokeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +48,7 @@
 		3E46853C27F9AC6A00670235 /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
 		3E46853E27F9AC7100670235 /* JokeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeInteractor.swift; sourceTree = "<group>"; };
 		3E46854027F9AC7500670235 /* JokeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeRouter.swift; sourceTree = "<group>"; };
+		3E46854B27F9BF4E00670235 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		3EBEEEE127F887A50012A461 /* VIPER-CompleteGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER-CompleteGuide.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBEEEFC27F887E80012A461 /* JokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBEEEFE27F887E80012A461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +60,7 @@
 		3EBEEF2027F8ADA40012A461 /* JokeModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModule.swift; sourceTree = "<group>"; };
 		3EBEEF2227F8B5DD0012A461 /* JokeDetailModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailModule.swift; sourceTree = "<group>"; };
 		3EBEEF2427F8B6B00012A461 /* JokeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDetailView.swift; sourceTree = "<group>"; };
-		3EBEEF2727F8B72C0012A461 /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		3EBEEF2727F8B72C0012A461 /* JokeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E46854727F9BA2400670235 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E46854827F9BF3B00670235 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				3E46854B27F9BF4E00670235 /* API.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		3EBEEED827F887A50012A461 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +127,7 @@
 		3EBEEEFD27F887E80012A461 /* JokeApp */ = {
 			isa = PBXGroup;
 			children = (
+				3E46854827F9BF3B00670235 /* Tools */,
 				3EBEEF2627F8B6DE0012A461 /* Model */,
 				3EBEEF1F27F8AD800012A461 /* JokeDetail */,
 				3EBEEF1E27F8AD7A0012A461 /* Joke */,
@@ -161,7 +174,7 @@
 		3EBEEF2627F8B6DE0012A461 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3EBEEF2727F8B72C0012A461 /* Joke.swift */,
+				3EBEEF2727F8B72C0012A461 /* JokeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +195,8 @@
 			dependencies = (
 			);
 			name = "VIPER-CompleteGuide";
+			packageProductDependencies = (
+			);
 			productName = "VIPER-CompleteGuide";
 			productReference = 3EBEEEE127F887A50012A461 /* VIPER-CompleteGuide.app */;
 			productType = "com.apple.product-type.application";
@@ -199,6 +214,9 @@
 			dependencies = (
 			);
 			name = JokeApp;
+			packageProductDependencies = (
+				3E46854627F9BA2400670235 /* SnapKit */,
+			);
 			productName = JokeApp;
 			productReference = 3EBEEEFC27F887E80012A461 /* JokeApp.app */;
 			productType = "com.apple.product-type.application";
@@ -250,6 +268,9 @@
 				Base,
 			);
 			mainGroup = 3EBEEED827F887A50012A461;
+			packageReferences = (
+				3E46854527F9BA2400670235 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 3EBEEEE227F887A50012A461 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -299,7 +320,8 @@
 				3EBEEF2127F8ADA40012A461 /* JokeModule.swift in Sources */,
 				3E46853F27F9AC7100670235 /* JokeInteractor.swift in Sources */,
 				3E46853D27F9AC6A00670235 /* JokeView.swift in Sources */,
-				3EBEEF2827F8B72C0012A461 /* Joke.swift in Sources */,
+				3E46854C27F9BF4E00670235 /* API.swift in Sources */,
+				3EBEEF2827F8B72C0012A461 /* JokeModel.swift in Sources */,
 				3EBEEF1B27F8ABC00012A461 /* ViperBase.swift in Sources */,
 				3E46853B27F9AC6600670235 /* JokePresenter.swift in Sources */,
 				3E46853727F9AC1100670235 /* JokeDetailInteractor.swift in Sources */,
@@ -623,6 +645,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3E46854527F9BA2400670235 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3E46854627F9BA2400670235 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3E46854527F9BA2400670235 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3EBEEED927F887A50012A461 /* Project object */;
 }

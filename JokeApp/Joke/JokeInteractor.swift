@@ -7,11 +7,29 @@
 
 import Foundation
 
-protocol JokeInteractorInput: AnyObject {}
-protocol JokeInteractorOutput: AnyObject {}
+protocol JokeInteractorInput: AnyObject {
+    func getJokes()
+}
+protocol JokeInteractorOutput: AnyObject {
+    func interactor(didGet jokes: Jokes)
+}
 
-class JokeInteractor: ViperInteractor, JokeInteractorInput {
+class JokeInteractor: ViperInteractor {
     var output: JokeInteractorOutput!
     
     required init() {}
+}
+
+extension JokeInteractor: JokeInteractorInput {
+    func getJokes() {
+        API.getJokes() {
+            [weak output] result in
+            switch result {
+            case .success(let jokes):
+                output?.interactor(didGet: jokes)
+                break
+            case .failure: break
+            }
+        }
+    }
 }
